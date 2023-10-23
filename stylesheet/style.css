@@ -8,10 +8,10 @@ body {
   
 .imagenes-container{
  
-margin: 100px auto;
-width: 500px;
-display: flex;
-
+  display: flex;
+  justify-content:center ;
+  align-items: center ;
+  height: 100vh;
 }
 
 .imagenes-container .imagen {
@@ -22,12 +22,13 @@ display: flex;
   flex-direction: column;
 }
 .imagenes-container .imagen img{
-   width: 50px;
-   height: 50px;
+   width: 150px;
+   height: 150px;
+   transition: transform 0.3s ease-in-out;
     
 
 }
-.imagenes-container .imagen .nombre { /* los puntos son para acceder dentro de las carpetas . como cd */
+.imagenes-container .imagen .nombre { /* los puntos son para acceder dentro de las carpetas/ classes . como cd */
 
   position: absolute;
   background-color: rgb(72, 0, 255);
@@ -51,7 +52,33 @@ display: flex;
   text-align: center;
   box-sizing: border-box;
 }
-.imagenes-container .imagen:hover .nombre {
+.imagenes-container .imagen:hover .nombre { /* hover cada vez que pasas el mouse por ahi se realiza una accion concreta*/
   display: inline-block;
  
+}
+
+.imagenes-container .imagen .nombre::before {
+  content: "";
+  position: absolute; /*contenedor immediato */
+  width: 1px; 
+  height: 1px;
+  left: 40%;
+  bottom: -20px;
+  border-top: 10px solid  rgb(72, 0, 255);
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent; 
+  border-bottom: 10px solid transparent; 
+
+} 
+
+.imagenes-container .imagen:hover img{ 
+transform: translateY(-3px);
+
+}
+
+@media  (max-widht: 680px) {
+  .imagenes-container{
+    flex-direction: column;
+    height: 180vh; 
+  }
 }
