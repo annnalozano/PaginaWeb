@@ -1,0 +1,57 @@
+body {
+    font-family: verdana;
+    background-color: #00ff40;
+    color: rgb(255, 0, 0);
+  }
+
+
+  
+.imagenes-container{
+ 
+margin: 100px auto;
+width: 500px;
+display: flex;
+
+}
+
+.imagenes-container .imagen {
+
+  position: relative;
+  margin-right: -20px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.imagenes-container .imagen img{
+   width: 50px;
+   height: 50px;
+    
+
+}
+.imagenes-container .imagen .nombre { /* los puntos son para acceder dentro de las carpetas . como cd */
+
+  position: absolute;
+  background-color: rgb(72, 0, 255);
+  border-radius: 5px;
+  color:rgb(255, 0, 123);
+  display: none;
+  min-width: 100px;
+  width: 150px; /* modificar el ancho entre el medio de los assets */
+  top: -55px; /* modificar el texto hascia arriba o abajo */
+  left: calc(50%);
+  padding: 10px 15px; /* relleno del texto */ 
+
+}
+.imagenes-container .imagen .nombre .text {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.imagenes-container .imagen:hover .nombre {
+  display: inline-block;
+ 
+}
