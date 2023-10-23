@@ -1,26 +1,6 @@
 
---md-footer-bg-color: white;
---md-footer-fg-color: rgb(32, 32, 32);
---md-footer-bg-color--dark: white;
---md-footer-fg-color--lighter:  rgb(32, 32, 32);
---md-footer-fg-color--light:  rgb(32, 32, 32);
---mdc-typography-headline6-font-family: 'Be Vietnam', sans-serif;
---mdc-typography-font-family: 'Be Vietnam', sans-serif;
---md-typeset-a-color: rgb(12, 240, 190);
 
-}
-.yellowParagraph {
-  font-family: arial;
-  font-size: 30px;
-  background-color: #F5DA93;
-  color: rgb(16, 15, 15);
-}
-#pinkelement {
-  font-family: century;
-  font-size: 50px;
-  font-style: italic;
-  color: #F536D3;
-} 
+
 a {
   color: black;
   text-decoration: nons e;
