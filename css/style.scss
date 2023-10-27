@@ -1,3 +1,26 @@
-body ¨{
-    background-color: aqua;
-}
+:root(
+    --color1:  #00ff40;
+
+)
+
+body( 
+    font-family: sans-serif; 
+    background-color: var(--color1);
+    background-image: ; () ;
+    
+)
+
+.container( 
+    display: flex;  /*organizar como una sola fila*/
+    justify-content: center ; 
+    align-items: center ;
+    height: 100vh ; 
+
+)
+
+.card (
+    background-color:  #00ff40;
+    width: 328px; 
+    border-radius: 16px; 
+    box-shadow: 2px 2px 15px    black ;
+)
