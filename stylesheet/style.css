@@ -5,7 +5,7 @@ body {
    
     /* Configuracion Fondo de pantalla */
     background-image: url("/imagenes/delfin.png");
-    background-color: #ffffff; /* Used if the image is unavailable */
+    background-color: #ff3434; /* Used if the image is unavailable */
     height: 600px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image */
