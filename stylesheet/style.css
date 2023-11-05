@@ -40,9 +40,9 @@ body {
 .imagenes-container .imagen .nombre { /* los puntos son para acceder dentro de las carpetas/ classes . como cd */
 
   position: absolute;
-  background-color: rgb(255, 185, 226); /* color interior de la caja */
+  background-color: rgb(255, 255, 255); /* color interior de la caja */
   border-radius: 5px;
-  color:rgb(82, 209, 255); /* color de las letras */
+  color:rgb(245, 106, 217); /* color de las letras */
   display: none;
   min-width: 100px;
   width: 150px; /* modificar el ancho entre el medio de los corazones */
@@ -92,4 +92,5 @@ transform: translateY(-3px);
     height: 180vh; 
   }
 }
+
 
