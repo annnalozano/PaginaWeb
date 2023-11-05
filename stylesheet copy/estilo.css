@@ -6,7 +6,7 @@ body {
    
     /* Configuracion Fondo de pantalla */
     background-image: url("/imagenes/allado.png");
-    background-color: #ffffff; /* Used if the image is unavailable */
+    background-color: rgb(229, 229, 229); /* Used if the image is unavailable */
     height: 700px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -15,3 +15,8 @@ body {
   
 
 
+  *{
+    margin-top: auto;
+    margin-left: 30px;  /* para moverlo de derecha a izquierda  */
+    padding: 0px;  /* para que quede mas separado o mas junto el index  */
+}
