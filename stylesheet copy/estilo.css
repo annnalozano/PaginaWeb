@@ -1,7 +1,8 @@
 body {
 
   /* Configuracion tipografia */
-    font-family: verdana;
+    font-family: Dancing Script;
+    font-size: 25px; 
    
     /* Configuracion Fondo de pantalla */
     background-image: url("/imagenes/allado.png");
