@@ -16,7 +16,9 @@ body {
   background-color: var(--color1);
   margin: 0; /* Elimina el margen predeterminado del body */
   height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-  /*background-image: url( "/imagenes/artbreeder-pattern\ \(10\).jpg" );*/
+  background-image: url("/imagenes/artbreeder-pattern (7).jpg");
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 .container {
