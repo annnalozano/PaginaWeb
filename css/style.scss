@@ -19,13 +19,19 @@ font-family: "Dancing Script";
 background-color: var(--color1);
     margin: 0; /* Elimina el margen predeterminado del body */
     height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background-image: url( "/imagenes/artbreeder-pattern\ \(7\).jpg" );
+    background-image: url( "../../PaginaWeb/imagenes/FondoME.jpg" );
     background-size: contain;
     background-attachment: fixed;
 
 
 
 }
+
+.center-image {
+    display: flex;
+    justify-content: center;
+  
+  }
 
 .container { 
     display: flex;  /*# Forma en la que se organiza la informacion. Flex es columnas*/

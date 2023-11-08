@@ -21,6 +21,11 @@ body {
   background-attachment: fixed;
 }
 
+.center-image {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex; /*# Forma en la que se organiza la informacion. Flex es columnas*/
   justify-content: center; /*# Justificar el texto */
