@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotherOfDolphins</title>
+    <link rel="stylesheet" type="text/css" href="../PaginaWeb/stylesheet/extra.css">
+    
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .draggable {
+      width: 300px;
+      height: 300px;
+       
+      position: absolute;
+      cursor: move;
+    }
+
+      #objeto1 {
+      background-image: url('../PaginaWeb/imagenes/barceloka.png');
+      background-size: cover;
+    }
+
+    #objeto2 {
+      background-image: url('../PaginaWeb/imagenes/artbreeder-pattern (3).jpg');
+      background-size: cover;
+
+      
+    }
+  </style>
+</head>
+<body>
+
+    <a href="../PaginaWeb/about/About.html"><p class="boton">Go Back About</p>  </a>  
+
+  <div class="draggable" id="objeto1"></div>
+  <div class="draggable" id="objeto2"></div>
+  <!-- Puedes agregar más objetos según sea necesario -->
+
+  <script>
+    // Función para hacer un elemento "arrastrable"
+    function hacerArrastrable(elemento) {
+      var offsetX, offsetY, isDragging = false;
+
+      elemento.addEventListener('mousedown', function (e) {
+        isDragging = true;
+        offsetX = e.clientX - elemento.getBoundingClientRect().left;
+        offsetY = e.clientY - elemento.getBoundingClientRect().top;
+      });
+
+      document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+          elemento.style.left = e.clientX - offsetX + 'px';
+          elemento.style.top = e.clientY - offsetY + 'px';
+        }
+      });
+
+      document.addEventListener('mouseup', function () {
+        isDragging = false;
+      });
+    }
+
+    // Obtener todos los elementos con la clase "draggable" y hacerlos arrastrables
+    var elementosArrastrables = document.querySelectorAll('.draggable');
+    elementosArrastrables.forEach(function (elemento) {
+      hacerArrastrable(elemento);
+    });
+  </script>
+
+</body>
+</html>
