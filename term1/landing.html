@@ -23,7 +23,7 @@
 
             font: bold normal   20px/normal "lucida Calligraphy";
             text-transform: none;
-            color: #FFF;
+            color: rgb(255, 227, 12);
             font-size: 24px;
              }
 
@@ -33,11 +33,11 @@
 }
 
         .Fantasy {
-      font: xx-large fantasy;
-     color: #60C;
+        font: xx-large fantasy;
+         color: #60C;
          font-weight: bold;
- font-family: fantasy;
-    font-size: 36px;
+        font-family: fantasy;
+        font-size: 36px;
         }
 
         .contenedor{
@@ -48,8 +48,8 @@
 
             height: 740vh; /* alto del quadrado*/
             margin-top: 0%;
-            margin-left: 25%; 
-            margin-right: 25%;
+            margin-left: 10%; 
+            margin-right: 10%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -84,43 +84,48 @@
         justify-content: center;
                     }
 
-        .cuadro-interior {
-            width: 200px;
-            height: 200px;
-            border: 1px solid rgb(0, 0, 0);
-            background-color: #ccffff;
-            margin-top: 25%;
-          
-        }
+      
+    .cuadro-interior {
+    width: 200px;
+    min-height: 200px; /* Usar min-height en lugar de height para permitir el crecimiento */
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ccffff;
+
+}
 
 
 
-
+        
 
     </style>
 
 </head>
 
-<div class="dolfin">
-    <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
-   </div>
 
 <body>
+
+    
+    <div class="dolfin">
+        <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+       </div>
+
+       
     
     <div  class="contenedor"  >
+        
 
         <div class="cuadro-interior" >
-            <h1>Landing</h1>
+            <h1> <span class="fantasy"> Landing</span></h1>
           
         </div>
-
         
-        <p> <span class="lucida">The importance of associationism:</span></p>
+             
+        <p> <span class="fantasy">The importance of associationism:</span></p>
         <p>Local entities and neighborhood communities play an essential role in the everyday life of their residents. They contribute to social cohesion, provide support and solidarity, promote civic participation, preserve local culture and traditions, drive neighborhood development and improvement, offer education and resources, foster diversity and tolerance, and contribute to the establishment of a strong community identity.</p>
-        <a href="https://poblenouurbandistrict.com/ca/associacio/">Poblenou Districte Cultural 22@</a>
+        <a href="https://poblenouurbandistrict.com/ca/associacio/"> <span class="lucida">Districte Cultural 22@</span> </a>
         
         <p> <em> Places we visited:   </em></p>
-        <p>La Plataforma / Biciclot / Bioma @bioma.cat / Transfolabs @transfolab_bcn    </p>
+        <p> <span class="treb">La Plataforma / Biciclot / Bioma @bioma.cat / Transfolabs @transfolab_bcn  </span>  </p>
         <p> “My” interesting entities, studios, cultural and artistic centers that are part of the Poblenou neighborhood:</p>
         <p>Galeries d’art, museus i showrooms: BD / Museu Can Framis / Disseny Hub Barcelona / MaterFab / Ket galeria</p>
         <p> Centres de creació i estudis d’artistas: La Escocesa / Hangar / Antoni Arola Studio/ OnionLab / TigreLab /ProtoPixel/ AcidHouse/ FolchStudio /White Horse / Palo Alto /mauricigines/ na.b3collective /BeatMe Lab /</p>
