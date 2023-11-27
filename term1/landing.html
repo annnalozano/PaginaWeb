@@ -15,47 +15,46 @@
         background: rgb(136,0,255);
         background: linear-gradient(0deg, rgba(136,0,255,1) 7%, rgba(0,61,255,1) 28%, rgba(0,237,255,1) 49%, rgba(0,61,255,1) 73%, rgba(136,0,255,1) 91%);
 
-            
             /*background-image: url(/imagenes/artbreeder-pattern\ \(10\).jpg);*/
         }
         
-        .lucida {
+        .lucida {   
 
             font: bold normal   20px/normal "lucida Calligraphy";
             text-transform: none;
             color: rgb(255, 227, 12);
             font-size: 24px;
-             }
+             }    /*es para los links */
 
         .treb {	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	    color: #006;
 	    font-style: italic;
-}
+}    /*para el texto pequeño */
 
         .Fantasy {
         font: xx-large fantasy;
-         color: #60C;
-         font-weight: bold;
+        color: #60C;
+        font-weight: bold;
         font-family: fantasy;
         font-size: 36px;
-        }
+        }     /*para los titulos */
 
-        .contenedor{
-            background-color: #3399cc; /* relleno del quadrado */
-            border: 1.5px solid #000000; /* Borde del cuadro */
-            padding: 20px; /* Margen interno */
-            border-radius: 10px; /* Bordes redondeados */
+        .contenedor {
+    background-color: #3399cc;
+    border: 1.5px solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto; /* Cambiado a 'auto' para que se ajuste al contenido */
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-            height: 740vh; /* alto del quadrado*/
-            margin-top: 0%;
-            margin-left: 10%; 
-            margin-right: 10%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;    
-
-           }
+        
 
         .borde{
             /*background-color: #3399cc;*/ /* relleno del quadrado */
@@ -85,14 +84,20 @@
                     }
 
       
-    .cuadro-interior {
+     .cuadro-interior {
     width: 200px;
-    min-height: 200px; /* Usar min-height en lugar de height para permitir el crecimiento */
     border: 1px solid rgb(0, 0, 0);
     background-color: #ccffff;
-
+    display: flex; /* Hace que el contenido sea un contenedor flexible */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
 }
 
+    .img {
+        display: flex;
+        justify-content: center;
+
+}
 
 
         
@@ -101,6 +106,9 @@
 
 </head>
 
+<div class="img">
+    <img src="../imagenes/SEMINARS.jpg" alt="SEMINARS"  >
+</div>
 
 <body>
 
@@ -120,41 +128,41 @@
         </div>
         
              
-        <p> <span class="fantasy">The importance of associationism:</span></p>
-        <p>Local entities and neighborhood communities play an essential role in the everyday life of their residents. They contribute to social cohesion, provide support and solidarity, promote civic participation, preserve local culture and traditions, drive neighborhood development and improvement, offer education and resources, foster diversity and tolerance, and contribute to the establishment of a strong community identity.</p>
+        <h1><em> <span class="fantasy">The importance of associationism:</span></em></h1>
+        <p> <span class="treb"> Local entities and neighborhood communities play an essential role in the everyday life of their residents. They contribute to social cohesion, provide support and solidarity, promote civic participation, preserve local culture and traditions, drive neighborhood development and improvement, offer education and resources, foster diversity and tolerance, and contribute to the establishment of a strong community identity.</span></p>
         <a href="https://poblenouurbandistrict.com/ca/associacio/"> <span class="lucida">Districte Cultural 22@</span> </a>
         
-        <p> <em> Places we visited:   </em></p>
+        <h3> <em> <span class=" treb"> Places we visited:  </span>   </em></h3>
         <p> <span class="treb">La Plataforma / Biciclot / Bioma @bioma.cat / Transfolabs @transfolab_bcn  </span>  </p>
-        <p> “My” interesting entities, studios, cultural and artistic centers that are part of the Poblenou neighborhood:</p>
-        <p>Galeries d’art, museus i showrooms: BD / Museu Can Framis / Disseny Hub Barcelona / MaterFab / Ket galeria</p>
-        <p> Centres de creació i estudis d’artistas: La Escocesa / Hangar / Antoni Arola Studio/ OnionLab / TigreLab /ProtoPixel/ AcidHouse/ FolchStudio /White Horse / Palo Alto /mauricigines/ na.b3collective /BeatMe Lab /</p>
-        <p>Centres de formació en disseny i arquitectura: BAU / IAAC | Fab Lab Barcelona / L’Idem Barcelona / FX Barcelona Film School / Barcelona School of Creativity / SAE Barcelona</p>
-        <p>Entitats i Centres de l’ajuntament: Centre Civic Can Felipa/ Casal de Joves Can Ricart / Casal de Jóvenes Xiroc / Ateneu Popular La Flor de Maig</p> 
+        <p> <span class="treb ">   “My” interesting entities, studios, cultural and artistic centers that are part of the Poblenou neighborhood:</span></p>
+        <p> <span class="treb ">Galeries d’art, museus i showrooms: BD / Museu Can Framis / Disseny Hub Barcelona / MaterFab / Ket galeria</span> </p>
+        <p> <span class=" treb "> Centres de creació i estudis d’artistas: La Escocesa / Hangar / Antoni Arola Studio/ OnionLab / TigreLab /ProtoPixel/ AcidHouse/ FolchStudio /White Horse / Palo Alto /mauricigines/ na.b3collective /BeatMe Lab /</span></p>
+        <p> <span class="treb">Centres de formació en disseny i arquitectura: BAU / IAAC | Fab Lab Barcelona / L’Idem Barcelona / FX Barcelona Film School / Barcelona School of Creativity / SAE Barcelona</p>
+        <p> <span class="treb"> Entitats i Centres de l’ajuntament: Centre Civic Can Felipa/ Casal de Joves Can Ricart / Casal de Jóvenes Xiroc / Ateneu Popular La Flor de Maig  </span> </p> 
 
-        <h1>Documenting Design Intro: </h1>
-        <p> The importance of documentation for creative projects
-            DOCUMENTATION IS A PATH FOR KNOWLEDGE TRANSFER AND COLLABORATION    </p>
+        <h1> <em> <span class=" fantasy"> Documenting Design Intro:</span> </em> </h1>
+        <p> <span class=" treb"> The importance of documentation for creative projects</span> </p>
+        <p> <span class=" treb">    DOCUMENTATION IS A PATH FOR KNOWLEDGE TRANSFER AND COLLABORATION </span> </p>   
 
-        <p> <em>Notes of Coding  </em> </p>
-        <a href="https://hackmd.io/@usaestoparadescargar/SyhIzZG-a">my coding notes </a> 
+        <h3> <em> <span class="fantasy"> Notes of Coding </span> </em> </h3>
+        <a href="https://hackmd.io/@usaestoparadescargar/SyhIzZG-a"> <span class="lucida "> my coding notes </span> </a> 
 
-        <h1>Elisava Facilities: </h1>
-        <p><strong>Spaces:</strong></p>
-        <a href="https://www.elisava.net/espacios/">Elisava Spaces</a>
+        <h1> <em> <span class="fantasy">  Elisava Facilities:</span> </em></h1>
+        <p> <strong> <span class="treb"> Spaces:</span></strong></p>
+        <a href="https://www.elisava.net/espacios/"> <span class="lucida">  Elisava Spaces</span></a>
         <ol>
-            <li>Library:
-            <a href="https://www.elisava.net/espacios/biblioteca/">https://www.elisava.net/espacios/biblioteca/</a> 
-        <p>As a member of the Elisava Community, you will be able to borrow documents available at the Enric Bricall Library (Elisava’s Library) and also borrow them from other Catalan university libraries.</p>  
-        <p>all of them specialized in the fields of graphic design, product design, industrial design engineering, architecture and interior design.</p> </li>
-                <p><em>Schedule</em></p>
+            <span class="treb"> <li> <strong> Library:</span> </strong>
+            <a href="https://www.elisava.net/espacios/biblioteca/"> <span class=" lucida">https://www.elisava.net/espacios/biblioteca/ </span></a> 
+        <p> <span class="treb"> As a member of the Elisava Community, you will be able to borrow documents available at the Enric Bricall Library (Elisava’s Library) and also borrow them from other Catalan university libraries. </span></p>  
+        <p> <span class="treb"> all of them specialized in the fields of graphic design, product design, industrial design engineering, architecture and interior design.</span> </p> </li>
+                <p><em> <span class="treb">  Schedule</span></em></p>
                 De lunes a jueves, de 9.00 a 20.00h.
                 Viernes de 9.00 a 19.00h.
 
-            <p>Contact </p> 
+            <p> <strong> Contact </strong> </p> 
             <a href="biblioteca@elisava.net">bibliotecaElisava</a>
             <ul class="puntos">
-                <li>Online Catalogue</li>
+                <span class="  "></span><li>Online Catalogue</li>
                 <a href="https://ebookcentral.proquest.com/auth/lib/elisava-ebooks/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Felisava-ebooks%2Fhome.action">https://ebookcentral.proquest.com/auth/lib/elisava-ebooks/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Felisava-ebooks%2Fhome.action</a>
                <a href="https://catalegbiblioteca.elisava.net/opac/?locale=es#indice">https://catalegbiblioteca.elisava.net/opac/?locale=es#indice</a>
                <a href="https://www.csuc.cat/ca/serveis/biblioteques-del-ccuc">https://www.csuc.cat/ca/serveis/biblioteques-del-ccuc</a>
