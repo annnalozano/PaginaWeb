@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
+   
+    
+    
 
     <style> 
-        body{
-            font-family:  Verdana, Arial, Helvetica, sans-serif ;
-            color: #5e30eb;
-            
+       
+            body{
+                font: 100% Verdana, Arial, Helvetica, sans-serif;
             height: 200px;
+            color: rgb(120, 51, 255) ;
+            background-image: url("../imagenes/degradado.png") ;
+            background-color: #ffffff; /* Used if the image is unavailable */
+            background-size: 68%; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza el contenido */
+}
+    
+            
+          /*  color: #60C;
+             background: linear-gradient(0deg, rgba(136, 0, 255, 1), rgba(0, 61, 255, 1), rgba(0, 237, 255, 1));
+height: 100vh;  Ajusta la altura al 100% del viewport height (altura de la pantalla) */
 
-        background: rgb(136,0,255);
-        background: linear-gradient(0deg, rgba(136,0,255,1) 7%, rgba(0,61,255,1) 28%, rgba(0,237,255,1) 49%, rgba(0,61,255,1) 73%, rgba(136,0,255,1) 91%);
 
-            /*background-image: url(/imagenes/artbreeder-pattern\ \(10\).jpg);*/
-        }
         
         .lucida {   
 
@@ -84,15 +94,18 @@
                     }
 
       
+     /*
+     
      .cuadro-interior {
     width: 200px;
     border: 1px solid rgb(0, 0, 0);
     background-color: #ccffff;
-    display: flex; /* Hace que el contenido sea un contenedor flexible */
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    display: flex; /* Hace que el contenido sea un contenedor flexible 
+    align-items: center; /* Centra verticalmente el contenido 
+    justify-content: center; /* Centra horizontalmente el contenido 
 }
 
+*/
     .img {
         display: flex;
         justify-content: center;
@@ -163,13 +176,13 @@
             <p> <span class="treb "> "biblioteca@elisava.net"   </span> </p>
             <p class="puntos">
                 <strong><em> <span class=" treb ">   Online Catalogue </span> </em> </strong>
-               <a href="https://ebookcentral.proquest.com/auth/lib/elisava-ebooks/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Felisava-ebooks%2Fhome.action">  <span class=" lucida"> 1.https://ebookcentral.proquest.com/auth/lib/elisava-ebooks/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Felisava-ebooks%2Fhome.action </span> </a>
-               <a href="https://catalegbiblioteca.elisava.net/opac/?locale=es#indice"><span class="lucida"> 2.https://catalegbiblioteca.elisava.net/opac/?locale=es#indice</span></a>
-               <a href="https://www.csuc.cat/ca/serveis/biblioteques-del-ccuc"><span class="lucida"> 3.https://www.csuc.cat/ca/serveis/biblioteques-del-ccuc</span></a>
+        <li>       <a href="https://ebookcentral.proquest.com/auth/lib/elisava-ebooks/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Felisava-ebooks%2Fhome.action">  <span class=" lucida"> biblioteca virtual </span> </a></li>
+          <li>  <a href="https://catalegbiblioteca.elisava.net/opac/?locale=es#indice"><span class="lucida"> cataleg bilbioteca elisava </span></a></li>
+          <li> <a href="https://www.csuc.cat/ca/serveis/biblioteques-del-ccuc"><span class="lucida"> https://www.csuc.cat/ca/serveis/biblioteques-del-ccuc</span></a></li>
                <em> <p><strong> <span class="treb"> FREB</span> </p> </strong> </em>
                 <p> <span class="treb "> materials from this collection cannot be checked out and are not freely accessible. For access, contact the library staff.
                 </span></p>
-                <a href="https://www.bibliotecaelisava.net/">https://www.bibliotecaelisava.net/</a>
+                <a href="https://www.bibliotecaelisava.net/"> <span class="lucida">https://www.bibliotecaelisava.net/</span></a>
                 <p> <span class="treb"> Material Designers Collection Space</span></p>
             </p>
            
@@ -180,7 +193,7 @@
             <p> <span class="treb"> tallergrafic@elisava.net</span></p>
             <p> <span class="treb"> for printing in Elisava you have to send an email to </span> </p>
             <a href="https://www.elisava.net/wp-content/uploads/2023/09/guia-taller-grafico.pdf"> <span class="lucida"> https://www.elisava.net/wp-content/uploads/2023/09/guia-taller-grafico.pdf</span></a>
-            <img src="../../PaginaWeb/imagenes/Historia de Instagram Publicidad Discoteca Gradiente Azul (3).png" alt="GraphicDesign" width="100%">
+            <img src="../../PaginaWeb/imagenes/Historia de Instagram Publicidad Discoteca Gradiente Azul (3).png" alt="GraphicDesign" width="60%">
             <p> </p>
 
             <p><span class="treb"> 3.Media Lab </span></p>
@@ -196,7 +209,7 @@
         <p> <span class="treb">From extractive to regenerative technologies: Change towards technologies that seek to restore and preserve the environment instead of depleting its resources.</span> </p>
         <a href="https://fablabs.io/"> <span class="lucida"> FabLab Networking </span></a>
 
-        <img src="../../PaginaWeb/imagenes/upload_83088e275df0debf1ce571eeceb68f73.png" alt="FabLab Networking" width="100%" >
+        <img src="../../PaginaWeb/imagenes/upload_83088e275df0debf1ce571eeceb68f73.png" alt="FabLab Networking" width="70%" >
 
         <h1>Some notes of Laura’s Research background:</h1>
 
@@ -210,7 +223,7 @@
         <p><em> <span class="treb">Symbiocracy: </span> </em> <span class="treb"> In a general context, it refers to a system of government in which different groups or stakeholders work together in a symbiotic relationship to make decisions and manage common interests. It is often associated with the idea that the different involved parties collaborate rather than compete, seeking mutual and sustainable benefit.</span></p>
         <p><em> <span class="treb">Anti - especismo : </span> </em> <span class="treb"> advocates for the moral equality of all animal species, regardless of their species. It opposes speciesism, which is discrimination based on species, and advocates that all sentient beings deserve ethical treatment and moral consideration. Speciesism involves giving preferential treatment or moral consideration to humans in comparison to other animal species. </span></p>
         <p><span class="treb"> Elysa clorostica</span></p>
-        <p><span class="treb"></span>Kropotkin</span></p>
+        <p><span class="treb" > Kropotkin</span></p>
         <p><em> <span class="treb">Biohacking: </span> </em> <span class="treb"> It refers to the practice of biologically modifying and enhancing the human body by applying principles of engineering and technology. It involves the modification of aspects of human biology with the goal of improving performance, health, longevity, or even acquiring new abilities.
             Transhumanism. </span> </p>
         <p> <span class="treb">Moral duty</span></p>
@@ -224,10 +237,10 @@
             <p><em><span class="treb">British eugenic society:</span></em><span class="treb"> Eugenics is the study or belief in the possibility of improving the human race through selective breeding or other forms of genetic manipulation. The British Eugenics Society was established in the early 20th century and aimed to apply the principles of eugenics to social policies and practices. </span></p>
 
             <h1>Extra Sources</h1>
-            <a href="https://www.dropbox.com/s/yljt1r0n6hbu7rd/PrototypesChapterFinalDRAFT.pdf?dl=0"><span class="lucida">Lecture: Prototypes and Prototyping in Design Research </span></a>
-            <a href="https://hairyelefante.medium.com/design-is-not-going-to-save-the-world-8985870471a5"><span class="lucida">Lecture: Design Won't Save the World </span></a>
-            <a href="https://jods.mitpress.mit.edu/pub/design-as-participation/release/1"><span class="lucida">Lecture: Design as Participation</span></a> 
-            <a href="https://sts-news.medium.com/design-thinking-is-kind-of-like-syphilis-its-contagious-and-rots-your-brains-842ed078af29"><span class="lucida">Lecture: Design Thinking is Kind of Like Syphilis </span></a>
+          <li>  <a href="https://www.dropbox.com/s/yljt1r0n6hbu7rd/PrototypesChapterFinalDRAFT.pdf?dl=0"><span class="lucida">Lecture: Prototypes and Prototyping in Design Research </span></a> </li>
+          <li>  <a href="https://hairyelefante.medium.com/design-is-not-going-to-save-the-world-8985870471a5"><span class="lucida">Lecture: Design Won't Save the World </span></a> </li>
+          <li>  <a href="https://jods.mitpress.mit.edu/pub/design-as-participation/release/1"><span class="lucida">Lecture: Design as Participation</span></a> </li>
+          <li>  <a href="https://sts-news.medium.com/design-thinking-is-kind-of-like-syphilis-its-contagious-and-rots-your-brains-842ed078af29"><span class="lucida">Lecture: Design Thinking is Kind of Like Syphilis </span></a> </li>
     </div>
 </body>
 <div class="dolfin">
