@@ -14,48 +14,122 @@
 
             /*background-image: url(/imagenes/artbreeder-pattern\ \(10\).jpg);*/
         }
-    
-        .contenedor{
-            background-color:  #3399cc; /* relleno del quadrado */
-            border: 1.5px solid #000000; /* Borde del cuadro */
-            padding: 20px; /* Margen interno */
-            border-radius: 10px; /* Bordes redondeados */
+         
+.lucida {   
 
-            
-            height: 650vh; /* alto del quadrado*/
-            margin-top: 15%;
-            margin-left: 25%; 
-            margin-right: 25%;
+font: bold normal   20px/normal "lucida Calligraphy";
+text-transform: none;
+color: rgb(255, 227, 12);
+font-size: 24px;
+ }    /*es para los links */
+
+.treb {	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+color: #006;
+font-style: italic;
+}    /*para el texto pequeño */
+
+.Fantasy {
+font: xx-large fantasy;
+color: #60C;
+font-weight: bold;
+font-family: fantasy;
+font-size: 36px;
+}     /*para los titulos */
+
+.goback {
+
+    font-family: Dancing Script;
+    font-size: 25px;
+}
+
+.contenedor {
+background-color: #3399cc;
+border: 1.5px solid #000000;
+padding: 20px;
+border-radius: 10px;
+height: auto; /* Cambiado a 'auto' para que se ajuste al contenido */
+margin-top: 0%;
+margin-left: 10%;
+margin-right: 10%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
 
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        
+.borde{
+/*background-color: #3399cc;*/ /* relleno del quadrado */
+border: 1.5px solid #000000; /* Borde del cuadro */
+padding: 20px; /* Margen interno */
+border-radius: 10px; /* Bordes redondeados */
+
+height: 740vh; /* alto del quadrado*/
+margin-top: 0%;
+margin-left: 25%; 
+margin-right: 25%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;    
+}
+
+.puntos {
+    list-style-type: disc; /* Utiliza "disc" para viñetas con forma de puntos */
+}
+p{ width: 95%; }
+
+
+.dolfin {
+display: flex;
+justify-content: center;
         }
 
-        p{
-            width: 95%;
 
+.cuadro-interior {
+width: 200px;
+border: 1px solid rgb(0, 0, 0);
+background-color: #ccffff;
+display: flex; /* Hace que el contenido sea un contenedor flexible */
+align-items: center; /* Centra verticalmente el contenido */
+justify-content: center; /* Centra horizontalmente el contenido */
+}
 
-
-        }
-
-        .resaltado {
-    background-color: yellow;
+.img {
+display: flex;
+justify-content: center;
 
 }
+
+
 
     .girar {
         transform: rotate(90deg);
     }
+
+    
+    .resaltado {
+    background-color: yellow;
+
+}
     
     </style>
 
 </head>
+
+<a href="../term1/"><p class="boton goback">Go Back Term1</p>  </a>  
+
+<div class="img">
+    <img src="../imagenes/SEMINARS.jpg" alt="SEMINARS"  >
+</div>
 <body>
+
+    
+    <div class="dolfin">
+        <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+       </div>
+
     <div  class="contenedor"  >
         <h1>Atlas of Weak Signals</h1>
         <p><em>Be a trend before a trend</em></p>
@@ -117,4 +191,11 @@
     <p>actively modifying the present through the power of making with others.</p>
     <p>responsibility, accountability, transparency, empathy and positionality
         Re - orienting design precessess</p>
+        </div>
 
+    </body>
+    <div class="dolfin">
+        <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+       </div>
+    
+    </html>
