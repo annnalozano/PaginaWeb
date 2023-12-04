@@ -18,14 +18,20 @@ body {
 font-family: "Dancing Script";
 background-color: var(--color1);
     margin: 0; /* Elimina el margen predeterminado del body */
-    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background-image: url( "../../PaginaWeb/imagenes/FondoME.jpg" );
-    background-size: contain;
-    background-attachment: fixed;
+
+    /* Configuracion Fondo de pantalla */
+    background-image: url("../../PaginaWeb/imagenes/Space.png");
+    background-color: #ffffff; /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  
 
 
 
-}
+
 
 .center-image {
     display: flex;
