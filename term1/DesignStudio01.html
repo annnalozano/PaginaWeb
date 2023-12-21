@@ -3,100 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>DesignStudio</title>
 
     <style> 
-        body{
-            font-family: "Dancing Script"  sans-serif;
-            height: 200px;
+              
+                        body{
+                font: 100% Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(120, 51, 255) ;
+           /* height: 200px;
+          
+            background-image: url("../imagenes/degradado.png") ;
+            background-color: #ffffff; /* Used if the image is unavailable 
+            background-size: 68%; /* Ajusta el tamaño de la imagen para cubrir todo el fondo 
+    background-position: center; /* Centra la imagen en el fondo 
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza el contenido */
 
-            background: rgb(136,0,255);
-            background: linear-gradient(0deg, rgba(136,0,255,1) 7%, rgba(0,61,255,1) 28%, rgba(0,237,255,1) 49%, rgba(0,61,255,1) 73%, rgba(136,0,255,1) 91%);
-            
-            /*background-image: url(/imagenes/artbreeder-pattern\ \(10\).jpg);*/*
+    height: 400px;
+
+           background: rgb(136,0,255);
+          background: linear-gradient(0deg, rgba(136,0,255,1) 7%, rgba(0,61,255,1) 28%, rgba(0,237,255,1) 49%, rgba(0,61,255,1) 73%, rgba(136,0,255,1) 91%);
+
+        }    
+      
+.lucida {   
+
+font: bold normal   20px/normal "lucida Calligraphy";
+text-transform: none;
+color: rgb(255, 227, 12);
+font-size: 24px;
+ }    /*es para los links */
+
+.treb {	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+color: #006;
+font-style: italic;
+}    /*para el texto pequeño */
+
+.Fantasy {
+font: xx-large fantasy;
+color: #60C;
+font-weight: bold;
+font-family: fantasy;
+font-size: 36px;
+}     /*para los titulos */
+
+.contenedor {
+background-color: #3399cc;
+border: 1.5px solid #000000;
+padding: 20px;
+border-radius: 10px;
+height: auto; /* Cambiado a 'auto' para que se ajuste al contenido */
+margin-top: 0%;
+margin-left: 10%;
+margin-right: 10%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.borde{
+/*background-color: #3399cc;*/ /* relleno del quadrado */
+border: 1.5px solid #000000; /* Borde del cuadro */
+padding: 20px; /* Margen interno */
+border-radius: 10px; /* Bordes redondeados */
+
+height: 740vh; /* alto del quadrado*/
+margin-top: 0%;
+margin-left: 25%; 
+margin-right: 25%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;    
+}
+
+.puntos {
+    list-style-type: disc; /* Utiliza "disc" para viñetas con forma de puntos */
+}
+p{ width: 95%; }
+
+
+.dolfin {
+display: flex;
+justify-content: center;
         }
-    
-        .contenedor{
-            background-color:  #3399cc; /* relleno del quadrado */
-            border: 1.5px solid #000000; /* Borde del cuadro */
-            padding: 20px; /* Margen interno */
-            border-radius: 10px; /* Bordes redondeados */
-
-            
-            height: 850vh; /* alto del quadrado*/
-            margin-top: 15%;
-            margin-left: 25%; 
-            margin-right: 25%;
 
 
+.cuadro-interior {
+width: 200px;
+border: 1px solid rgb(0, 0, 0);
+background-color: #ccffff;
+display: flex; /* Hace que el contenido sea un contenedor flexible */
+align-items: center; /* Centra verticalmente el contenido */
+justify-content: center; /* Centra horizontalmente el contenido */
+}
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        
-        }
-
-        p{
-            width: 95%;
-
-
-
-        }
-
-        .resaltado {
-    background-color: yellow;
+.img {
+display: flex;
+justify-content: center;
 
 }
+
+
 
     .girar {
         transform: rotate(90deg);
     }
+
+    
+    .resaltado {
+    background-color: yellow;
+
+}
+.goback {
+
+font-family: Dancing Script;
+font-size: 25px;
+}
     
     </style>
 
 </head>
+<a href="../../PaginaWeb/index/intro.html"><p class="goback">Go Back Term1</p>  </a>  
+
+<div class="img">
+    <img src="../imagenes/SEMINARS.jpg" alt="SEMINARS"  >
+</div>
+
 <body>
+
+    
+    <div class="dolfin">
+        <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+       </div>
+
+
     <div  class="contenedor"  >
         <h1>DesignStudio01</h1>
-        <p>1st, 2nd and 3rd person perspective:</p>
-        <p>There are different approaches to relate to the socio-technical system object of study. 3rd person perspective relates to gathering information without getting involved, and a 2nd person perspective is about designing with a sample of the target group. In a 1st person perspective, the designer is part of a system within the existing social structures</p>
-        <h1>Rols of Prototyping: Ways of Knowledge</h1>     
-        <p><em>Role 1:</em>The prototype as an experimental component
-            to test specific hypotheses physically embedded (incrustado) in the artifact. It is ideal if you’re working on a project where you need to physically validate specific hypotheses. It’s particularly useful when you want to check if an idea or concept works in practice and meets certain criteria or requirements.</p>  
-        <p><em>Role 2:</em>The prototype as a means of inquiry
-            to encourage (fomentar) reflection. It is relevant when you want to foster reflection and exploration. This approach is useful if you want to gain a deeper understanding of how users interact with a product or concept and how it relates to their experiences and emotions.</p>
-
-        <p><em>Role 3:</em>The prototype as a research archetype.
-            Speculative Design . exposing confrontational or contradictory scenarios. It is well-suited for speculative design projects, where you aim to create provocative or contradictory scenarios to explore different possibilities and challenge conventional perceptions. This role is useful when you want to open up new perspectives and question the dogmas.</p>
-        <p><em> Role 4: </em>The process of prototyping as a vehicle for inquir.
+        <p><span class="treb">1st, 2nd and 3rd person perspective: </span></p>
+        <p> <span class="treb">There are different approaches to relate to the socio-technical system object of study. 3rd person perspective relates to gathering information without getting involved, and a 2nd person perspective is about designing with a sample of the target group. In a 1st person perspective, the designer is part of a system within the existing social structures</span></p>
+        <h1><span class="fantasy">Rols of Prototyping: Ways of Knowledge</span></h1>     
+        <p><span class="treb"><strong>Role 1:</span></strong><span class="treb">The prototype as an experimental component
+            to test specific hypotheses physically embedded (incrustado) in the artifact. It is ideal if you’re working on a project where you need to physically validate specific hypotheses. It’s particularly useful when you want to check if an idea or concept works in practice and meets certain criteria or requirements.</span></p>  
+        <p><strong> <span class="treb">Role 2:</span></strong> <span class="treb">The prototype as a means of inquiry 
+            to encourage (fomentar) reflection. It is relevant when you want to foster reflection and exploration. This approach is useful if you want to gain a deeper understanding of how users interact with a product or concept and how it relates to their experiences and emotions.</span></p>
+        <p><strong> <span class="treb">Role 3:</span></strong><span class="treb">The prototype as a research archetype.
+            Speculative Design . exposing confrontational or contradictory scenarios. It is well-suited for speculative design projects, where you aim to create provocative or contradictory scenarios to explore different possibilities and challenge conventional perceptions. This role is useful when you want to open up new perspectives and question the dogmas.</span></p>
+        <p><span class="treb"><em> Role 4: </em></span> <span class="treb">The process of prototyping as a vehicle for inquir.
             The process becomes a means of inquiry.
-            The reasearch contribution is tied not to the artefact itself as much as to how the artefact was crafted. Enphasize how the prototype is created rather than just the final outcome. This can be useful when the design process itself is a fundamental part of your research. You can explore how iteration, design decisions, and methodologies affect the final result </p>
+            The reasearch contribution is tied not to the artefact itself as much as to how the artefact was crafted. Enphasize how the prototype is created rather than just the final outcome. This can be useful when the design process itself is a fundamental part of your research. You can explore how iteration, design decisions, and methodologies affect the final result</span> </p>
 
-        <p><span class="resaltado">BRIEF: Upload to your website your own RtD toolbox (extended workspace).</span>.</p>
-        <p>Accept and reflect on how your context is shaping you as a professional. Rethink how your infrastructure, people, places, things and materials became available either physical or virtual to your practice.</p>
+        <p><span class="resaltado treb">BRIEF: Upload to your website your own RtD toolbox (extended workspace).</span>.</p>
+        <p> <span class="treb">Accept and reflect on how your context is shaping you as a professional. Rethink how your infrastructure, people, places, things and materials became available either physical or virtual to your practice. </sapn></p>
 
-        <img src="../../PaginaWeb/imagenes/IMG_20231030_0002-1.png" alt="ToolBox" width="500vh" class="girar">
-        <p><span class="resaltado">BRIEF: Write a reflection on the main roles of prototyping and other design activities that you want to use based on the context you are in.</span>.</p>
-            <p>Remember, you don’t have to stick to just one of these prototyping roles throughout your design journey. You can use any of them whenever needed to reach your goals, and sometimes it’s even beneficial to mix different roles to achieve your research objectives effectively.</p>
-            <p>Prototyping and Experimentation: (trial and error)</p>
-            <p>Vincular la conducta a la aleatoriedad de las acciones y de evadir la toma de decisiones delegando la a cosas que son absolutamente ajenas. </p>    
-            <p>Diluye la propia autonomía como sujeto, las decisiones, la cotidianidad,. Confiar al azar una parte controlada de esta realidad.</p>
-            <p>Tiene que ser posible, sin organizar el tiempo, sin contar con él como cosa segura, dejarlo ser tal como es.</p>
-            <p><span   class= "resaltado"> BRIEF: Upload a GIF with a short explanation/audio-file for the prototype for your partner’s inquiry.</span></p>
-            <p><em>Francisca Project:</em>Understanding the importance of emotional connection in a world that often feels fast-paced and distant, the idea of providing a response to this need arises. Based on the premise of offering more comforting and authentic hugs, the creation of extendable arm prostheses has been conceived</p>
+        <img src="../../PaginaWeb/imagenes/IMG_20231030_0002-1.png" alt="ToolBox" width="50%" class="girar">
+        <p><span class="resaltado treb">BRIEF: Write a reflection on the main roles of prototyping and other design activities that you want to use based on the context you are in.</span>.</p>
+            <span class="treb"><p>Remember, you don’t have to stick to just one of these prototyping roles throughout your design journey. You can use any of them whenever needed to reach your goals, and sometimes it’s even beneficial to mix different roles to achieve your research objectives effectively.</sapn></p>
+            <span class="treb"><p>Prototyping and Experimentation: (trial and error)</p></sapn>
+            <span class="treb"><p>Vincular la conducta a la aleatoriedad de las acciones y de evadir la toma de decisiones delegando la a cosas que son absolutamente ajenas. </p>  </span>
+            <span class="treb"><p>Diluye la propia autonomía como sujeto, las decisiones, la cotidianidad,. Confiar al azar una parte controlada de esta realidad.</p></span>
+            <p> <span class="treb">Tiene que ser posible, sin organizar el tiempo, sin contar con él como cosa segura, dejarlo ser tal como es.</p></span>
+            <p><span   class= "resaltado treb"> BRIEF: Upload a GIF with a short explanation/audio-file for the prototype for your partner’s inquiry.</span></p>
+            <p><span class="treb"><em>Francisca Project:</em> </span><span class="treb">Understanding the importance of emotional connection in a world that often feels fast-paced and distant, the idea of providing a response to this need arises. Based on the premise of offering more comforting and authentic hugs, the creation of extendable arm prostheses has been conceived</p></span>
             <img src="../../PaginaWeb/imagenes/IMG_1303.jpeg" alt="Prototype" width="500vh">
-             <p> What if these hands, which long to embrace, comfort, and touch, could only inflict harm? </p>
+             <span class="treb"><p> What if these hands, which long to embrace, comfort, and touch, could only inflict harm? </p> </span>
 
 
 
 
             <h1>Areas of Intervention in a Multiscalar Design Space</h1>
-            <p>From design space to design actions</p>
+            <span class="treb"><p>From design space to design actions</p>
             <p>From individual design spaces to collective interventions</p>
             <p><em>Keywords</em></p>
             <p>co-create </p>
-            <p>prototypes with others</p>
+            <p>prototypes with others</p> 
 
 
             <p><em>Design Intervention</em>The action of deploying prototypes (physical, digital, ideas, methodologies) in the real world in order to explore and trigger actions in humans and non-humans</p>
@@ -108,49 +191,190 @@
             <li> An experience to learn through situated action  </li>
 
             <p>Collaborative Design Spaces to find experimentation & intervention opportunities.</p>
-            <p>Growing Communities of Practice: Creating groups of interest.Who complements yours skills, expands your network and resources, supports you theoretically or methodologically?</p>
+            <p>Growing Communities of Practice: Creating groups of interest.Who complements yours skills, expands your network and resources, supports you theoretically or methodologically?</p> </span>
 
             <h2>Find personal relationships with your collegues</h2>
                     
-        <p><span class="resaltado">BRIEF: A reflection on the Collective Design Space activity carried out with all your collegues.</span></p>
+        <p><span class="resaltado treb">BRIEF: A reflection on the Collective Design Space activity carried out with all your collegues.</p> </span>
         <img src="../../PaginaWeb/imagenes/final class design space.jpg" alt="Collective Design Space" width="500vh">
-        <li>3 objects/products that represent the issues they were enquiring in a tangible way</li>
+       <span class="treb"> <li>3 objects/products that represent the issues they were enquiring in a tangible way</li>
         <li>3 kinds of materials that express some of the qualities of these issues        </li>
         <li>3 reference projects or initiatives that are working around those issues (pictures, blueprints, etc)</li>
         <li>2 reference technologies/methodologies that are being used to investigate/attend to that problem</li>
         <li>2 possible contexts in Barcelona which they would be interested to place an intervention</li>
-        <li>2 experiments that allow them to prototype their intervention</li>
+        <li>2 experiments that allow them to prototype their intervention</li> </span>
         
-        <p><span class="resaltado">BRIEF: A reflection on your group work. Include an image for the resulting shared Design Space</span></p>
+        <p><span class="resaltado treb">BRIEF: A reflection on your group work. Include an image for the resulting shared Design Space</span></p>
         <img src="../../PaginaWeb/imagenes/marco.png" alt="Design Space"    width="500vh">
-        <a href="https://miro.com/app/board/uXjVNXDWCIM=/">Miro board of our Design Intervention</a>
+       <a href="https://miro.com/app/board/uXjVNXDWCIM=/">  <span class="lucida">Miro board of our Design Intervention</a> </span>
 
-        We've designed a collective Design Intervention to explore how alterations of your face can change your perception of yourself; either hide a part of you or enhance it. We want to give the possibility of changing your face to a specific group of people, and allow them to reflect on reconfiguration of the body. This change they can apply to their faces, might be on purpose to hide a part they don't like or either enhance another one they love.
-            
+        <span class="treb">We've designed a collective Design Intervention to explore how alterations of your face can change your perception of yourself; either hide a part of you or enhance it. We want to give the possibility of changing your face to a specific group of people, and allow them to reflect on reconfiguration of the body. This change they can apply to their faces, might be on purpose to hide a part they don't like or either enhance another one they love.
         For the intervention, we have organized an event or party at Everardo's house with our friends. We believe that the relaxed atmosphere of this type of space gives the participant more room to get carried away.
-
         Our intervention wants to explore the following questions:
         Did you choose to alter your face to hide or change a part of yourself you don't like? Or to enhace your existing identity?
-        After changing your face, do you feel more like yourself or less like yourself?
+        After changing your face, do you feel more like yourself or less like yourself? </span>
 
-        <p><span    class="resaltado">BRIEF: Update your personal Design Space accordingly.</span></p>
+        <p><span    class="resaltado treb">BRIEF: Update your personal Design Space accordingly.</span></p>
 
-        <p><span class="resaltado"> BRIEF:Carry out a group pilot design interventions to understand your design space. Document it in your website. Make a video (max.3 min)</span></p>
+        <p><span class="resaltado treb"> BRIEF:Carry out a group pilot design interventions to understand your design space. Document it in your website. Make a video (max.3 min)</span></p>
 
-        <p>Final Result</p>
+         <span class="treb"> <strong>Final Result </strong> </span>
 
         <img src="../../PaginaWeb/imagenes/Test.png" alt="Final Result" width="500vh">
-        <a href="https://drive.google.com/file/d/1ouCHZIsyBYMkY5GwD-QtFqxdCGDZjjHG/view?usp=sharing">Final Video</a>
+        <a href="https://drive.google.com/file/d/1ouCHZIsyBYMkY5GwD-QtFqxdCGDZjjHG/view?usp=sharing"> <span class="lucida">Final Video</a> </span>
 
 
+        <h1>Design Space Update:</h1>
 
+        <p> <span class="treb">New points of interest extracted from the performed intervention:</p> </span> 
+        <span class="treb">
+        <h2>Keywords:</h2>
+        <ul>  
+            <li>Ageism</li>
+            <li>Ugliness</li>
+            <li>Unpleasant</li>
+            <li>Repulsive</li>
+            <li>Degeneration</li>
+            <li>Evolution</li>
+            <li>Attractive</li> 
+        </ul>  </span>
+        <span class="treb"> 
+        <h2>Reference links:</h2>  </span>
+        <ul>
+            <li><a href="https://www.instagram.com/p/B_XsrckDJHS/?hl=es" target="_blank"> <span class="lucida">Instagram: Artistic Intervention</a></li> </span>
+            <li><a href="https://www.vice.com/es/article/g5qpqq/esculturas-que-provocan-sensaciones-vertiginosas-repugnantes-e-incomodas"
+                    target="_blank"> <span class="lucida">Vice: Provocative Sculptures</a></li> </span> 
+        </ul>
+       <span class="treb">
+        <p>Exploration of the aesthetic and social perception of what is considered attractive or unpleasant.</p>
+    
+        <h2>Aging:</h2>
+        <ul>
+            <li>Wrinkles</li>
+            <li>The idea of empowerment through beauty: why not use wrinkles to empower ourselves?</li>
+            <li>- "Consideration of Aging as a Disease"</li>
+        </ul>
+    
+        <h2>Beauty:</h2>
+        <ul>
+            <li>Lazy eye</li>
+            <li>Scars</li>
+            <li>"Malformed" dentures</li>
+            <li>Etc.</li>
+        </ul>
+    
+        <h2>Other interventions I would have liked to develop:</h2>
+        <ul>
+            <li>Other methods and practices to deform the face with interaction with the body</li>
+            <li>Prosthetics challenging conventional perceptions</li>
+        </ul>
+    
+        <h2>Other considerations:</h2>
+        <ul>
+            <li>How do visually impaired people perceive beauty?</li> 
+        </ul>  </span>
 
+        <a href="https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015">  <span class="lucida"> https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015</a>
+            <span class="treb"> <em>Attached link to the board on creating my design space.</em> </span> 
+
+<hr>
+            <h2><span class="resaltado">what,</span> so what, now what?</h2>
+
+            <ul> <span class="treb">
+                <li>what happened? What did you observe?</li>
+                <li>what was your role?</li>
+                <li>what were your initial expectations?</li>
+                <li>what was good/bad about the experience?</li>
+                <li>what part of your experience was most challenging?</li>
+                <li>what part did you find surprising?</li>
+                <li>what did you already know about the topic you explored at the site/event/project?</li>
+                <li>who did you work with?</li>
+            </ul> </span>
         
+            <h2>what, <span class="resaltado">so what</span>  now what?</h2>
+        
+            <ul><span class="treb">
+                <li>what critical questions does this information cause you to ask?</li>
+                <li>what about the event stuck out to you/made an impact on you? What emotions does it evoke? How does it make you feel?</li>
+                <li>what broader issues arise from the situation at hand? What conclusions can you draw from the experience?</li>
+                <li>what did you learn about others and yourself?</li>
+                <li>how were you different when you finished this experience? What values, opinions, decisions have been made or changed through this experience?</li>
+                <li>what new skill did you learn?</li>
+                <li>how did this experience clarify, expand, or create an interest?</li>
+                <li>what impacts the way you view the situation/experience?</li>
+            </ul> </span>
+        
+            <h2>what, so what, <span class="resaltado">now what? </span></h2>
+        
+            <ul> <span class="treb">
+                <li>how will you apply what you learned from your experience?</li>
+                <li>what would you like to learn more about, related to this project or issue?</li>
+                <li>what follow-up is needed to address any challenges or difficulties?</li>
+                <li>what information can you share with your peers or the community?</li>
+                <li>if you could do the project again, what would you do differently?</li>
+                <li>how will your efforts on this project contribute to social change?</li>
+                <li>how will your efforts on this project contribute to your career?</li>
+                <li>how can society better address the problem from the project?</li>
+                <li>where do you go from here? What is the next step in the process?</li>
+            </ul></span>
+        
+            <h2>Activity: NOW WHAT?</h2>
+        
+            <span class="resaltado treb" ><p>BRIEF:Answer: what, so what, now what? of journey</p>
+            <p>Share the process and results of the activity: NOW WHAT?</p>
+            <p>Update your Design Space accordingly</p> </span>
 
+            <a href="https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015">  <span class="lucida"> https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015</a>
+                <span class="treb"> <em>Attached link to the miroboard.</em> 
+     <p>The concept of pleasure and physical enjoyment are no longer directed by the person-to-person connection but by the machine-to-machine interaction directed by two proximity sensors that create a fictitious connection between the two people, but at the same time charged with intimacy and pleasure. The connections results in an interaction between two digital models that actually touch and interact as if it were a condition of sexual intimacy that brings pleasure.</p>
+    </span> 
+            <video width="640" height="360" controls>
+                <source src="../../PaginaWeb/video/copy_B69CD898-E3F7-4234-9D5B-B690FD3E131D.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video> 
 
-    
-    
-    
+              <h1>Design Space Update: </h1>
+
+        <p> <span class="treb">New points of interest extracted from the performed intervention:</p> </span> 
+        <span class="treb">
+        <h2>Keywords:</h2>
+           <li>  Evolution  </li> 
+           <li> Adaptability  </li> 
+           <li>surroundings </li>
+            <li>  Body Shape</li>
+           <li> Enhancement</li> 
+
+            <p><strong>Transhumanism:</strong> is an intellectual and cultural movement advocating for the <span class="resaltado strong">enhancement</span> and expansion of <span class="resaltado strong">human capabilities</span> through the use of advanced technologies. Its main goal is to overcome biological limitations and <span class="resaltado strong">improve</span> the human condition by applying technologies such as genetic engineering, nanotechnology, artificial intelligence, augmented reality, and other related disciplines.</p>
+
+            <a href="https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015">  <span class="lucida"> https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015</a>
+                <span class="treb"> <em>Attached link to the miroboard.</em> 
+     <p>The concept of pleasure and physical enjoyment are no longer directed by the person-to-person connection but by the machine-to-machine interaction directed by two proximity sensors that create a fictitious connection between the two people, but at the same time charged with intimacy and pleasure. The connections results in an interaction between two digital models that actually touch and interact as if it were a condition of sexual intimacy that brings pleasure.</p>
+    </span> 
+            <video width="640" height="360" controls>
+                <source src="../../PaginaWeb/video/" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video> 
+
+            <p>- The evolution of the human body and its adaptation has been a dynamic response to our environment.</p>
+
+<p>- This futuristic approach adds an additional layer to my fascination, prompting questions about how we could evolve physically and biologically in still unknown environments.</p>
+
+<p>- The ability of our bodies to adjust and develop is a crucial aspect of this exploration.</p>
+
+<p>Nuevos referentes:</p>
+
+<p><em>Crimes of the Future</em></p>
+<p><em>Rosi Braidotti</em></p>
+<p><em>Donna Haraway. <em>Staying with the Trouble: Making Kin in the Chthulucene</em></em></p>
+<p>Durham: Duke University Press</p>
+<p><em>Ursula K. Le Guin</em></p>
+<p><em>Lucy McRae <a href="https://www.lucymcrae.net/lucyandbart">https://www.lucymcrae.net/lucyandbart</a></em></p>
+
+       
     </div>
 </body>
+<div class="dolfin">
+    <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+   </div>
+
 </html>

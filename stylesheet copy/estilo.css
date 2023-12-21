@@ -1,22 +1,32 @@
-body {
-
-  /* Configuracion tipografia */
-    font-family: Dancing Script;
-    font-size: 25px; 
-   
-    /* Configuracion Fondo de pantalla */
-    background-image: url("../../PaginaWeb/imagenes/allado.png");
-    background-color: rgb(229, 229, 229); /* Used if the image is unavailable */
-    height: 700px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  
-
-
-  *{
-    margin-top: auto;
-    margin-left: 30px;  /* para moverlo de derecha a izquierda  */
-    padding: 0px;  /* para que quede mas separado o mas junto el index  */
+@font-face {
+  font-family: 'MiTipografia'; /* Nombre que asignarás a la tipografía */
+  src: url('fonts/mi-tipografia.ttf') format('truetype'); /* Ruta a tu tipografía y su formato */
 }
+
+body {
+  /* Configuracion tipografia */
+  font-family: 'MiTipografia', dancing script; /* Agregado "cursive" como opción de respaldo */
+  font-size: 25px; 
+
+  /* Configuracion Fondo de pantalla */
+  background-image: url("../../PaginaWeb/imagenes/allado.png");
+  background-color: #ffffff; /* Usado si la imagen no está disponible */
+  height: 97vh; /* 100% de la altura de la ventana */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la ventana */
+}
+
+* {
+  margin-top: 0; /* Asegura que no haya margen superior en todos los elementos */
+  margin-left: 30px; /* Mueve todos los elementos 30px a la derecha */
+  padding: 0; /* Establece el relleno a 0 para todos los elementos */
+}
+
+/* Añadido para establecer un margen general */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+

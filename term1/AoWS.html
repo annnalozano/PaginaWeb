@@ -3,79 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesignStudio</title>
+    <title>AoWS</title>
 
     <style> 
-        body{
-            font-family: /*"Dancing Script"*/  sans-serif;
-            height: 200px;
-            background: rgb(136,0,255);
+    
+    body{
+                font: 100% Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(120, 51, 255) ;
+           /* height: 200px;
+          
+            background-image: url("../imagenes/degradado.png") ;
+            background-color: #ffffff; /* Used if the image is unavailable 
+            background-size: 68%; /* Ajusta el tamaño de la imagen para cubrir todo el fondo 
+    background-position: center; /* Centra la imagen en el fondo 
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza el contenido */
+
+    height: 400px;
+
+           background: rgb(136,0,255);
           background: linear-gradient(0deg, rgba(136,0,255,1) 7%, rgba(0,61,255,1) 28%, rgba(0,237,255,1) 49%, rgba(0,61,255,1) 73%, rgba(136,0,255,1) 91%);
 
-            /*background-image: url(/imagenes/artbreeder-pattern\ \(10\).jpg);*/
+        }    
+      
+.lucida {   
+
+font: bold normal   20px/normal "lucida Calligraphy";
+text-transform: none;
+color: rgb(255, 227, 12);
+font-size: 24px;
+ }    /*es para los links */
+
+.treb {	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+color: #006;
+font-style: italic;
+}    /*para el texto pequeño */
+
+.Fantasy {
+font: xx-large fantasy;
+color: #60C;
+font-weight: bold;
+font-family: fantasy;
+font-size: 36px;
+}     /*para los titulos */
+
+.contenedor {
+background-color: #3399cc;
+border: 1.5px solid #000000;
+padding: 20px;
+border-radius: 10px;
+height: auto; /* Cambiado a 'auto' para que se ajuste al contenido */
+margin-top: 0%;
+margin-left: 10%;
+margin-right: 10%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.borde{
+/*background-color: #3399cc;*/ /* relleno del quadrado */
+border: 1.5px solid #000000; /* Borde del cuadro */
+padding: 20px; /* Margen interno */
+border-radius: 10px; /* Bordes redondeados */
+
+height: 740vh; /* alto del quadrado*/
+margin-top: 0%;
+margin-left: 25%; 
+margin-right: 25%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;    
+}
+
+.puntos {
+    list-style-type: disc; /* Utiliza "disc" para viñetas con forma de puntos */
+}
+p{ width: 95%; }
+
+
+.dolfin {
+display: flex;
+justify-content: center;
         }
-    
-        .contenedor{
-            background-color:  #3399cc; /* relleno del quadrado */
-            border: 1.5px solid #000000; /* Borde del cuadro */
-            padding: 20px; /* Margen interno */
-            border-radius: 10px; /* Bordes redondeados */
-
-            
-            height: 650vh; /* alto del quadrado*/
-            margin-top: 15%;
-            margin-left: 25%; 
-            margin-right: 25%;
 
 
+.cuadro-interior {
+width: 200px;
+border: 1px solid rgb(0, 0, 0);
+background-color: #ccffff;
+display: flex; /* Hace que el contenido sea un contenedor flexible */
+align-items: center; /* Centra verticalmente el contenido */
+justify-content: center; /* Centra horizontalmente el contenido */
+}
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        
-        }
-
-        p{
-            width: 95%;
-
-
-
-        }
-
-        .resaltado {
-    background-color: yellow;
+.img {
+display: flex;
+justify-content: center;
 
 }
+
+
 
     .girar {
         transform: rotate(90deg);
     }
+
     
+    .resaltado {
+    background-color: yellow;
+
+}
+.goback {
+
+font-family: Dancing Script;
+font-size: 25px;
+}
     </style>
 
 </head>
+
+<a href="../../PaginaWeb/index/intro.html"><p class="goback">Go Back Term1</p>  </a>  
+
+<div class="img">
+    <img src="../imagenes/SEMINARS.jpg" alt="SEMINARS"  >
+</div>
 <body>
+
+    
+    <div class="dolfin">
+        <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+       </div>
+
     <div  class="contenedor"  >
         <h1>Atlas of Weak Signals</h1>
-        <p><em>Be a trend before a trend</em></p>
+        <span class="treb"><p><em>Be a trend before a trend</em></p>
         <p>In designing for emergent futures, an Atlas of Weak Signals serves as a visible methodology and structure to situate students, designers and a wide range of professionals from different fields, enabling them to start identifying potential intervention opportunities. It offers immediate keywords for research and experimentation and provides a starter design space to gain confidence and direction on where to begin, allowing for students and faculty to find design and intervention contexts and opportunities.</p>
         <p>The goal of this first Atlas of Weak Signals week is to give the students a general overview of the signals and toolkit that constitute the ongoing Atlas, a showcase of the research projects developed by former students and research faculty, and finally, a glimpse into a specific context which offers a hyper-local and situated view of some of the possible vectors that the Atlas presents.</p>
-        <a href="https://fablabbcn.org/blog/emergent-ideas/atlas-of-weak-signals">What are weak signals?</a>
+        <a href="https://fablabbcn.org/blog/emergent-ideas/atlas-of-weak-signals"> <span class=" lucida">What are weak signals?</a>
         <p>A weak signal is an indicator used to identify future changes with little or no current impact. By drawing up future scenarios and exploring the boundaries between conventional society and the future of technologies, individuals and organizations can move and position themselves within the complex panorama of the present, thus proactively combating future challenges through opportunities for design interventions.</p>
-        <p>The first place that we are going to have to look into the defining issue of our time.</p>
+        <p>The first place that we are going to have to look into the defining issue of our time.</p> </span>
         <h2>The collective exercise from the first session</h2>
-        <p>We learned the methodology, and we tested the method again in smaller groups. I was not familiar with many terminologies, so it helped me discover and subsequently comprehend new concepts and 'issues that I hadn’t taken into account or wasn’t aware of previously.</p>
-        <a href="https://fablabbcn.org/wp-content/uploads/2022/03/WeakSignals-manual.pdf">How to play?</a>
-        <li>Weak Signals: </li>
+       <span class="treb"><p>We learned the methodology, and we tested the method again in smaller groups. I was not familiar with many terminologies, so it helped me discover and subsequently comprehend new concepts and 'issues that I hadn’t taken into account or wasn’t aware of previously.</p></span> 
+        <a href="https://fablabbcn.org/wp-content/uploads/2022/03/WeakSignals-manual.pdf"> <span class=" lucida">How to play?</a>
+       <span class="treb"> <li>Weak Signals: </li>
         <li>Random Trigger: </li>
-        <li>Areas of Opportunities:  Where there can be interventions </li>
+        <li>Areas of Opportunities:  Where there can be interventions </li> </span>
 
         <h2>A Design Space</h2>
-        <p><em>Keywords:</em></p>
+        <span class="treb"><p><strong>Keywords:</strong></p>
         <li>Visualizing     </li>
         <li>Visualizing      </li>
-        <li>Allowing Understanding</li>
+        <li>Allowing Understanding</li> 
 
         <p><strong>What is a Design Space?</strong></p>
         <p>A physical or digital collection of experiments, reference objects, projects, products or materials visualised in a 2d-form in a meaningful way. It can integrate prototypes and projects developed previously, as well as other forms of information.</p>
@@ -87,34 +169,40 @@
         <p><strong>My Personal AoWS</strong></p>
         <p><span class="resaltado"> BRIEF: "Craft your own custom AWos board and propose two innovative suggestions.</span></p>
 
-        <img src="../../PaginaWeb/imagenes/IMG_20231014_0018.jpg" alt="My personal AWOS" width="500vh">
-        <a href="https://www.elisava.net/research-publicaciones/elisava-insights/">https://www.elisava.net/research-publicaciones/elisava-insights/</a>
-        <p>My additions</p>
+        <img src="../../PaginaWeb/imagenes/IMG_20231014_0018.jpg" alt="My personal AWOS" width="40%">
+        <a href="https://www.elisava.net/research-publicaciones/elisava-insights/"> <span class="lucida"> https://www.elisava.net/research-publicaciones/elisava-insights/</a>
+        <p> <strong>My additions</p></strong>
         <li>Morphing: How and why human body is redesigned? In face of agender movements, ecocentric and transhumanist phylosophies, creative domains rethink the human form. Zoomorphism and animal behavior is achieved through prostheses, and the redesign of the human body is inspired through fashion collections or through speculation on technological advances.        </li>
         <li>Cyberspace : There are no Facebook revolutions, but rather a new science of government cybernetics. The cybernetic order is an order we all nourish through our participation, our feedback, our data. The model would be Google or Facebook if we think of them as forms of governance and not just as innocent contact pages or search engines. An environment whose model is the Smart city. Smart because, through its thousands of sensors, it generates information whose real-time processing enables self-management. </li>
 
-    <li> Post Death Communication : We are living in an era where the physical world represents just a side of it. The “intangible” digital world is getting deeper and deeper in our lives and we are designing complex systems and behaviors with the aim of being purely digital. Death is physical but, in this context where the physical is not the whole, what happens to the digital life of someone who is leaving the physical world?</li>
+    <li> Post Death Communication : We are living in an era where the physical world represents just a side of it. The “intangible” digital world is getting deeper and deeper in our lives and we are designing complex systems and behaviors with the aim of being purely digital. Death is physical but, in this context where the physical is not the whole, what happens to the digital life of someone who is leaving the physical world?</li></span>
 
         <h2>Multiscalar Design space</h2>
 
-        <p><span class="resaltado">BRIEF : Map your weak signals through a multiscalar perspective to find resources, infrastructure, reference projects and possible context for intervention using the following categories to help you structure the information. Weak signals /Concepts / State of the Art / Reference Projects and People / Infrastructure / Extended Workspace / Materials/ Resources /Technologies and Methodologies / Possible Contexts for interventions. </span></p>
+        <p><span class="resaltado treb">BRIEF : Map your weak signals through a multiscalar perspective to find resources, infrastructure, reference projects and possible context for intervention using the following categories to help you structure the information. Weak signals /Concepts / State of the Art / Reference Projects and People / Infrastructure / Extended Workspace / Materials/ Resources /Technologies and Methodologies / Possible Contexts for interventions. </span></p>
         <img src="../../PaginaWeb/imagenes/IMG_20231016_0002-1.png" alt="multiscalarDesign Space " width="500vh" class="girar">
         <h2>Creatin my Design Space</h2>
             <img src="../../PaginaWeb/imagenes/captura-1.png" alt="Design Space" width="500vh">
-            <a href="https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015"> https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015</a>
-            <p><em>Attached link to the board on creating my design space.</em></p>
+            <a href="https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015">  <span class="lucida"> https://miro.com/app/board/uXjVNap_doU=/?share_link_id=445489512015</a>
+            <span class="treb"> <em>Attached link to the board on creating my design space.</em> </span> 
             <h2>reflection</h2>
-        <p><span class="resaltado">BRIEF: a reflection regarding their Atlas of weak signal design space.This reflection should include an introspective view concerning the benefits (or not) of the tool provided.</span></p>
-        <p>During my university career, I’ve already done a similar exercise, one that involves getting to know oneself, understanding what obsesses you, and why, etc., etc.</p>
+        <p><span class="resaltado treb">BRIEF: a reflection regarding their Atlas of weak signal design space.This reflection should include an introspective view concerning the benefits (or not) of the tool provided.</p> </span>
+        <p> <span class="treb">During my university career, I’ve already done a similar exercise, one that involves getting to know oneself, understanding what obsesses you, and why, etc., etc.
+        However, I’ve always found it difficult to choose, as there are numerous topics I’m interested in exploring. The card game seems to me like a good method to create agora spaces. We can generate countless future scenarios in which we can address the use of weak signals.
+        Decontextualizing the present and creating a sort of atlas in which we can map various areas of opportunity and discover weak signals to intervene in different areas that will impact the future. Landing your own weak signals on this large design space map, which is visually accessible, facilitates the understanding of the different worlds one creates, similar to a moodboard. This allows us to connect and find common ground with others. </span></p> 
 
-    <p>However, I’ve always found it difficult to choose, as there are numerous topics I’m interested in exploring. The card game seems to me like a good method to create agora spaces. We can generate countless future scenarios in which we can address the use of weak signals.</p>
-    <p>Decontextualizing the present and creating a sort of atlas in which we can map various areas of opportunity and discover weak signals to intervene in different areas that will impact the future. Landing your own weak signals on this large design space map, which is visually accessible, facilitates the understanding of the different worlds one creates, similar to a moodboard. This allows us to connect and find common ground with others.</p>
-
-    <h1>Abstract of the extra Resources:</h1>
-    <a href="http://www.fuel4design.org/index.php/design-futures-scouting/">http://www.fuel4design.org/index.php/design-futures-scouting/</a>
-    <p>A First Person Perspective (1PP) approach to futures scouting through making. </p>
+    <h1>Summary of the extra Resources:</h1>
+    <a href="http://www.fuel4design.org/index.php/design-futures-scouting/"> <span class="lucida">http://www.fuel4design.org/index.php/design-futures-scouting/</a>
+     <span class="treb "><p>A First Person Perspective (1PP) approach to futures scouting through making. </p>
     <p>novel design education methodologies   </p>
     <p>actively modifying the present through the power of making with others.</p>
     <p>responsibility, accountability, transparency, empathy and positionality
-        Re - orienting design precessess</p>
+        Re - orienting design precessess</p> </span>
+        </div>
 
+    </body>
+    <div class="dolfin">
+        <img src="../../PaginaWeb/imagenes/dolfin.png" alt="dolfin" width="150vh" >
+       </div>
+    
+    </html>

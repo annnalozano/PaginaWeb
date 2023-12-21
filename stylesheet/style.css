@@ -1,16 +1,22 @@
+@font-face {
+  font-family: 'MiTipografia'; /* Nombre que asignarás a la tipografía */
+  src: url('fonts/mi-tipografia.ttf') format('truetype'); /* Ruta a tu tipografía y su formato */
+}
 
+  
 
 
 body {
 
   /* Configuracion tipografia */
-    font-family: "dancing script";
+  font-family: 'MiTipografia', dancing script; /* Agregado "cursive" como opción de respaldo */
+  
     font-size: 25px; 
    
     /* Configuracion Fondo de pantalla */
     background-image: url("../../PaginaWeb/imagenes/Space.png");
     background-color: #ffffff; /* Used if the image is unavailable */
-    height: 700px; /* You must set a specified height */
+    height: 100%; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */

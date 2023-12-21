@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotherOfDolphins</title>
+    <link rel="stylesheet" type="text/css" href="../PaginaWeb/stylesheet/extra.css">
+    
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .draggable {
+      width: 300px;
+      height: 300px;
+       
+      position: absolute;
+      cursor: move;
+    }
+
+      #objeto1 {
+      background-image: url('../PaginaWeb/imagenes/ilovesinfondo.png');
+      background-size: cover;
+    }
+
+    #objeto2 {
+      background-image: url('../PaginaWeb/imagenes/artbreeder-pattern (3).jpg');
+      background-size: cover;
+
+      
+    }
+
+    #objeto3 {
+      background-image: url('../PaginaWeb/imagenes/grandefondo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      
+    }
+
+    #objeto4 {
+      background-image: url('../PaginaWeb/imagenes/hi.png');
+      background-size: cover;
+
+      
+    }
+
+   /*#objeto5 {
+       background-image: url('../PaginaWeb/imagenes/Gay_Pride_Flag.svg.png');
+     height: 50%;
+     background-repeat: no-repeat;  
+
+      
+    }
+
+    #objeto6 {
+      background-image: url('../PaginaWeb/imagenes/Antifacista.webp');
+      background-size: cover;
+
+      
+    } */
+    
+  </style>
+</head>
+<body>
+
+    <a href="../PaginaWeb/about/About.html"><p class="boton">Go Back About</p>  </a>  
+
+  <div class="draggable" id="objeto1"></div>
+  <div class="draggable" id="objeto2"></div>
+  <div class="draggable" id="objeto3"></div>
+  <div class="draggable" id="objeto4"></div>
+  <div class="draggable" id="objeto5"></div>
+  <div class="draggable" id="objeto6"></div>
+  <!-- Puedes agregar más objetos según sea necesario -->
+
+  <script>
+    // Función para hacer un elemento "arrastrable"
+    function hacerArrastrable(elemento) {
+      var offsetX, offsetY, isDragging = false;
+
+      elemento.addEventListener('mousedown', function (e) {
+        isDragging = true;
+        offsetX = e.clientX - elemento.getBoundingClientRect().left;
+        offsetY = e.clientY - elemento.getBoundingClientRect().top;
+      });
+
+      document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+          elemento.style.left = e.clientX - offsetX + 'px';
+          elemento.style.top = e.clientY - offsetY + 'px';
+        }
+      });
+
+      document.addEventListener('mouseup', function () {
+        isDragging = false;
+      });
+    }
+
+    // Obtener todos los elementos con la clase "draggable" y hacerlos arrastrables
+    var elementosArrastrables = document.querySelectorAll('.draggable');
+    elementosArrastrables.forEach(function (elemento) {
+      hacerArrastrable(elemento);
+    });
+  </script>
+
+</body>
+</html>
